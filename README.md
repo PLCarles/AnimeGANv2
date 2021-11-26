@@ -72,17 +72,17 @@ ___
   > [Link](https://github.com/TachibanaYoshino/AnimeGAN/releases/tag/dataset-1)  
 
 ### 3. Do edge_smooth  
-  > `python edge_smooth.py --dataset Hayao --img_size 256`  
+  > `python tools/edge_smooth.py --dataset Hayao --img_size 256`  
   
 ### 4. Calculate the three-channel(BGR) color difference  
-  >  `python data_mean.py --dataset Hayao`  
+  >  `python tools/data_mean.py --dataset Hayao`  
   
 ### 5. Train  
   >  `python main.py --phase train --dataset Hayao --data_mean 13.1360 -8.6698 -4.4661 --epoch 101 --init_epoch 10`  
   >  For light version: `python main.py --phase train --dataset Hayao --data_mean 13.1360 -8.6698 -4.4661  --light --epoch 101 --init_epoch 10`  
   
 ### 6. Extract the weights of the generator  
-  >  `python get_generator_ckpt.py --checkpoint_dir  ../checkpoint/AnimeGAN_Hayao_lsgan_300_300_1_2_10_1  --style_name Hayao`  
+  >  `python tools/get_generator_ckpt.py --checkpoint_dir  ../checkpoint/AnimeGAN_Hayao_lsgan_300_300_1_2_10_1  --style_name Hayao`  
 
 ### 7. Inference      
   > `python test.py --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/HR_photo --style_name Hayao/HR_photo`  
