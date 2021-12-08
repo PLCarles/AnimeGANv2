@@ -71,10 +71,10 @@ ___
 ### 2. Download Train/Val Photo dataset  
   > [Link](https://github.com/TachibanaYoshino/AnimeGAN/releases/tag/dataset-1)  
 
-### 3. Do edge_smooth  
+### 3. Do edge_smooth (需要使用绝对路径)
   > `python tools/edge_smooth.py --dataset Hayao --img_size 256`  
   
-### 4. Calculate the three-channel(BGR) color difference  
+### 4. Calculate the three-channel(BGR) color difference  （同上）
   >  `python tools/data_mean.py --dataset Hayao`  
   
 ### 5. Train  
