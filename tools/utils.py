@@ -1,9 +1,12 @@
 import tensorflow as tf
 from tensorflow.contrib import slim
-from adjust_brightness import adjust_brightness_from_src_to_dst, read_img
+
 import os,cv2
 import numpy as np
-
+try:
+    from adjust_brightness import adjust_brightness_from_src_to_dst, read_img
+except:
+    from tools.adjust_brightness import adjust_brightness_from_src_to_dst, read_img
 
 def load_test_data(image_path, size):
     img = cv2.imread(image_path).astype(np.float32)
