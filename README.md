@@ -71,6 +71,7 @@ ___
 ### 2. Download Train/Val Photo dataset  
   > [Link](https://github.com/TachibanaYoshino/AnimeGAN/releases/tag/dataset-1)  
   > [秒速五厘米关键帧Link](https://drive.google.com/drive/folders/18xqGEee8f10-N9KWqlM7TpL__38xkqVS?usp=sharing)
+  (需要像素压缩至256/512)
 
 ### 3. Do edge_smooth (需要使用绝对路径)
   > `python tools/edge_smooth.py --dataset Hayao --img_size 256`  
