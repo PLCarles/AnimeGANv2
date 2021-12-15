@@ -83,8 +83,8 @@ ___
   >  `python main.py --phase train --dataset Hayao --data_mean 13.1360 -8.6698 -4.4661 --epoch 101 --init_epoch 10`  
   >  For light version: `python main.py --phase train --dataset Hayao --data_mean 13.1360 -8.6698 -4.4661  --light --epoch 101 --init_epoch 10`  
   
-### 6. Extract the weights of the generator  
-  >  `python tools/get_generator_ckpt.py --checkpoint_dir  ../checkpoint/AnimeGAN_Hayao_lsgan_300_300_1_2_10_1  --style_name Hayao`  
+### 6. Extract the weights of the generator  (checkpoint_dir需使用绝对路径)
+  >  `python tools/get_generator_ckpt.py --checkpoint_dir  /root/AnimeGANv2-master/checkpoint/AnimeGANv2_m5_lsgan_300_300_1_2_10_1/   --style_name Hayao`  
 
 ### 7. Inference      
   > `python test.py --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/HR_photo --style_name Hayao/HR_photo`  
