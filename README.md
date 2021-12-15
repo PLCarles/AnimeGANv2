@@ -74,10 +74,10 @@ ___
   (需要像素压缩至256/512)
 
 ### 3. Do edge_smooth (需要使用绝对路径)
-  > `python tools/edge_smooth.py --dataset Hayao --img_size 256`  
+  > `python /root/AnimeGANv2-master/tools/edge_smooth.py --dataset m5 --img_size 512`
   
 ### 4. Calculate the three-channel(BGR) color difference  （同上）
-  >  `python tools/data_mean.py --dataset Hayao`  
+  >  `python /root/AnimeGANv2-master/tools/data_mean.py --dataset m5`  
   
 ### 5. Train  
   >  `python main.py --phase train --dataset Hayao --data_mean 13.1360 -8.6698 -4.4661 --epoch 101 --init_epoch 10`  
